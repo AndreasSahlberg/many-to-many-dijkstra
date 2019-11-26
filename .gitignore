@@ -1,0 +1,7 @@
+
+frames/pathfinder_frame_100000.png
+*.png
+*.xml
+.idea/workspace.xml
+distances.csv
+*.pyc
