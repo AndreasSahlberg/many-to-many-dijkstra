@@ -1,0 +1,24 @@
+channels:
+  - bioconda
+  - jmcmurray
+  - conda-forge
+  - defaults
+dependencies:
+  - contextily
+  - geopandas
+  - gdal
+  - json
+  - matplotlib
+  - notebook
+  - pandas
+  - plotly
+  - psycopg2
+  - psutil
+  - python-decouple
+  - python-kaleido
+  - rasterio
+  - rasterstats
+  - scikit-learn
+  - scikit-image
+  - seaborn
+  - scipy

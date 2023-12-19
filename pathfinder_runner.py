@@ -9,7 +9,7 @@ axis_labels = origins
 origins = origins.to_numpy()
 
 targets = test_data[['Y', 'X', 'MinimumOverallCode']]
-targets['MinimumOverallCode'] = targets.where(targets['MinimumOverallCode']==1, other=0)
+#targets['MinimumOverallCode'] = targets.where(targets['MinimumOverallCode']==1, other=0)
 targets = targets.pivot('Y', 'X', 'MinimumOverallCode')
 targets.fillna(value=0, inplace=True)
 targets = targets.to_numpy()

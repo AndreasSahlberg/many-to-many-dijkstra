@@ -5,3 +5,32 @@ frames/pathfinder_frame_100000.png
 .idea/workspace.xml
 distances.csv
 *.pyc
+burundi/af_riv_30s.dbf
+burundi/ temp_proj_points.cpg
+burundi/ temp_proj.cpg
+burundi/ temp_proj.dbf
+burundi/ temp_proj.prj
+burundi/ temp_proj.shp
+burundi/ temp_proj.shx
+*.dbf
+*.shp
+*.shx
+*.prj
+*.sbn
+*.sbx
+*.htm
+*.geojson
+*.grd
+*.gri
+*.vrt
+*.zip
+*.cpg
+*.tif
+*.gpkg
+*.pdf
+*.xml
+.idea/.name
+*.iml
+.idea/many-to-many-dijkstra.iml
+.idea/misc.xml
+.idea/workspace.xml

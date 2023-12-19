@@ -21,7 +21,7 @@ import time
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from numba import autojit
+from numba import jit
 import numpy as np
 
 
@@ -123,7 +123,7 @@ def seek(
     not_visited = 9999999999.
 
     if film:
-        frame_rate = int(1e4)
+        frame_rate = int(1e1)
         frame_counter = 100000
         frame_dirname = 'frames'
         try:
@@ -265,7 +265,7 @@ def render(
     plt.clf()
     plt.imshow(
         progress,
-        origin='higher',
+        origin='upper',
         interpolation='nearest',
         cmap=plt.get_cmap(cmap),
         vmax=1.,
@@ -277,7 +277,7 @@ def render(
     return frame_counter
 
 
-@autojit(nopython=True)
+@jit(nopython=True)
 def nb_trace_back(
     distance,
     n_new_locs,
@@ -353,7 +353,7 @@ def nb_trace_back(
     return n_new_locs
 
 
-@autojit(nopython=True)
+@jit(nopython=True)
 def nb_loop(
     col_here,
     distance,
